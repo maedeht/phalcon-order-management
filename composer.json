@@ -1,0 +1,8 @@
+{
+    "require": {
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^4.3",
+        "phalcon/devtools": "^3.4"
+    }
+}

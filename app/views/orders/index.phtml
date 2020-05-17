@@ -1,0 +1,22 @@
+<h2>Creating orders using this form</h2>
+<div style="padding: 10px">
+<?php echo $this->tag->form(["orders/create", "class" => "form-group"]); ?>
+
+    <label for="name" class="col-sm-3 col-form-label">Description</label>
+    <div class="col-sm-9">
+    <?php echo $this->tag->textField(["description", "class" => "form-control"]); ?>
+    </div>
+    <br/><br/>
+    <label for="email" class="col-sm-3 col-form-label">Total price</label>
+    <div class="col-sm-9">
+    <?php echo $this->tag->textField(["total_price", "class" => "form-control"]); ?>
+    </div>
+    <input type="hidden" name="<?php echo $this->security->getTokenKey() ?>" value="<?php echo $this->security->getToken() ?>" />
+
+    <?php echo $this->tag->submitButton([
+        "Submit",
+        "style" => "margin-top: 20px;font-size:large"
+    ]); ?>
+
+</form>
+</div>

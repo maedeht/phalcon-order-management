@@ -1,0 +1,29 @@
+<h2>List of this Order items</h2>
+
+<?php
+echo $this->tag->linkTo(
+[
+    '/orders/'.$id.'/item',
+    'Create item',
+    'class' => 'btn btn-info right'
+]).'<br/><br/>';
+?>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Price</th>
+    </tr>
+    <?php
+    foreach ($items as $item) {
+        ?>
+        <tr>
+            <td><?php echo $item->product ?></td>
+            <td><?php echo $item->qty ?></td>
+            <td><?php echo $item->price ?></td>
+        </tr>
+        <?php
+    }
+    ?>
+</table>
