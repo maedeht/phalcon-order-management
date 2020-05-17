@@ -7,7 +7,7 @@
 
 ----------
 
-###Comments on the project
+### Comments on the project
 - User can be created in `Register` page and be logged in using `Signin` link on the menu**
 - Some permission policies have been added to protect pages from guests and to manage users to visit pages they need*
 - A signed in user can create orders in `Orders` page and retrieve list of his/her orders**
